@@ -1,0 +1,6 @@
+.venv/
+.DS_Store
+amazon.db
+data/clean/orders_clean.csv
+powerbi/data/
+.ipynb_checkpoints/

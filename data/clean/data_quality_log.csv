@@ -1,0 +1,11 @@
+issue,rows_affected,action
+2024 version deleted rows with no amount (mostly cancelled orders),0,Cannot be restored from this file: add the original 'Amazon Sale Report.csv' to data/raw/
+Amount missing,0,"Kept the row (it is a real order, usually cancelled) with amount treated as 0 in revenue totals"
+Exact duplicate order lines,3,Removed
+12 raw statuses,121177,"Grouped into 5 outcomes: Shipped, Cancelled, Returned, Pending, Lost or damaged"
+Cancelled orders carry an amount,10766,Excluded from net revenue (net revenue = Shipped only)
+Shipped with amount 0 (likely free replacements),2262,Kept; they count as units but add no revenue
+State spelled inconsistently,32,68 spellings merged into 36 states and territories
+Ship state missing,31,Labelled 'Unknown'
+Promotion column was deleted in the 2024 version,0,Promotion analysis needs the original file
+Orders dated before April (a single partial day),162,"Kept, flagged is_full_month = 0; monthly trends use Apr-Jun"
