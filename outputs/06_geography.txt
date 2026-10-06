@@ -1,0 +1,18 @@
+state           order_lines  net_inr_m  pct_of_revenue  cancel_pct  seller_shipped_pct
+--------------  -----------  ---------  --------------  ----------  ------------------
+Maharashtra     22259        11.95      17.2            13.3        29.1              
+Karnataka       17325        9.44       13.5            13.0        27.6              
+Telangana       11330        6.12       8.8             14.4        29.1              
+Uttar Pradesh   10637        5.97       8.6             15.1        32.8              
+Tamil Nadu      11483        5.81       8.3             13.9        28.7              
+Delhi           7048         3.95       5.7             13.1        30.0              
+Kerala          6584         3.3        4.7             17.8        35.3              
+West Bengal     5962         3.1        4.4             14.8        29.1              
+Andhra Pradesh  5430         2.8        4.0             16.4        31.5              
+Haryana         4415         2.59       3.7             12.8        28.7              
+Gujarat         4489         2.43       3.5             13.2        32.1              
+Rajasthan       2718         1.57       2.3             13.8        34.4              
+customer_type  order_lines  net_inr_m  net_per_shipped_line  cancel_pct
+-------------  -----------  ---------  --------------------  ----------
+Consumer       128098       69.11      647.0                 14.3      
+Business       871          0.55       701.0                 8.4       

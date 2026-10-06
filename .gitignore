@@ -2,5 +2,7 @@
 .DS_Store
 amazon.db
 data/clean/orders_clean.csv
+data/clean/stock_clean.csv
 powerbi/data/
 .ipynb_checkpoints/
+Datasets/

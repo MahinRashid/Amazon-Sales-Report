@@ -1,0 +1,28 @@
+fulfilment           order_lines  pct_of_lines  cancel_pct  return_pct_of_shipped  net_inr_m  net_per_shipped_line
+-------------------  -----------  ------------  ----------  ---------------------  ---------  --------------------
+Fulfilled by Amazon  89692        69.5          12.8        0.0                    50.32      647.0               
+Shipped by seller    39277        30.5          17.5        6.6                    19.34      649.0               
+fulfilment           kept_pct  lost_pct
+-------------------  --------  --------
+Fulfilled by Amazon  86.7      12.8    
+Shipped by seller    75.8      22.8    
+category       amazon_cancel_pct  seller_cancel_pct  order_lines
+-------------  -----------------  -----------------  -----------
+Set            13.3               17.8               50281      
+Kurta          13.1               18.2               49874      
+Western Dress  11.8               16.0               15500      
+Top            11.0               15.2               10622      
+Ethnic Dress   10.4               18.3               1159       
+month    seller_share_pct  cancel_pct
+-------  ----------------  ----------
+2022-04  32.2              14.5      
+2022-05  31.9              14.0      
+2022-06  26.3              14.3      
+seller_cancel_pct  amazon_cancel_pct  orders_saved  revenue_saved_inr_m_3_months
+-----------------  -----------------  ------------  ----------------------------
+17.5               12.8               1839.0        1.19                        
+service_level  fulfilment           order_lines  cancel_pct
+-------------  -------------------  -----------  ----------
+Expedited      Fulfilled by Amazon  88609        12.9      
+Standard       Shipped by seller    39277        17.5      
+Standard       Fulfilled by Amazon  1083         4.4       

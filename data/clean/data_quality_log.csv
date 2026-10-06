@@ -1,11 +1,17 @@
 issue,rows_affected,action
-2024 version deleted rows with no amount (mostly cancelled orders),0,Cannot be restored from this file: add the original 'Amazon Sale Report.csv' to data/raw/
-Amount missing,0,"Kept the row (it is a real order, usually cancelled) with amount treated as 0 in revenue totals"
-Exact duplicate order lines,3,Removed
-12 raw statuses,121177,"Grouped into 5 outcomes: Shipped, Cancelled, Returned, Pending, Lost or damaged"
-Cancelled orders carry an amount,10766,Excluded from net revenue (net revenue = Shipped only)
-Shipped with amount 0 (likely free replacements),2262,Kept; they count as units but add no revenue
-State spelled inconsistently,32,68 spellings merged into 36 states and territories
-Ship state missing,31,Labelled 'Unknown'
-Promotion column was deleted in the 2024 version,0,Promotion analysis needs the original file
-Orders dated before April (a single partial day),162,"Kept, flagged is_full_month = 0; monthly trends use Apr-Jun"
+Rows deleted by the 2024 cleaning (no amount),7795,"Restored. 7,566 of them are cancelled orders, so the 2024 cancellation rate was understated"
+Amount missing,7795,"Kept as real orders (7,566 are cancelled); flagged amount_known = 0 and counted as 0 in revenue totals"
+Exact duplicate order lines,6,Removed
+13 raw statuses,128969,"Grouped into 5 outcomes: Shipped, Cancelled, Returned, Pending, Lost or damaged"
+Cancelled orders that carry an amount,10766,Excluded from net revenue (net revenue = Shipped only)
+Shipped with amount 0 (likely free replacements),2478,Kept; they count as units but add no revenue
+Promotion codes are only recorded on orders that shipped,49150,"Only 295 of 18,329 cancelled orders carry a code, so 'promotions prevent cancellations' would be a false reading. Field kept but not used to explain cancellations"
+State spelled inconsistently,33,69 spellings merged into 36 states and territories
+Ship state missing,34,Labelled 'Unknown'
+Days unsuitable for trends: 31 Mar (partial) and 27-29 Jun (orders not yet shipped),3150,"Kept in totals, flagged in_trend = 0; per-day trends use 1 Apr to 26 Jun"
+Returns are only recorded for seller-shipped orders,0,Amazon-fulfilled returns are handled by Amazon and absent from this report; return rates are shown for seller-shipped orders only
+Stock report: SKU or stock quantity missing,83,Removed
+Stock report: SKU listed more than once,23,Stock quantities summed per SKU
+Order lines whose SKU has no stock record,7704,94.0% of order lines match the stock report; unmatched SKUs are excluded from stock-cover analysis only
+Stock snapshot has no date,9170,Treated as stock on hand at the end of the sales period; stock-cover figures are indicative
+"Kaggle price lists (May-2022, P&L March 2021) share no SKUs with the Amazon orders",0,"Not used: they describe a different product range, so profit margins cannot be computed"

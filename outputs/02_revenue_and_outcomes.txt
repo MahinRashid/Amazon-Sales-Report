@@ -1,0 +1,29 @@
+outcome          order_lines  pct_of_lines  value_inr_m  lines_with_no_amount
+---------------  -----------  ------------  -----------  --------------------
+Shipped          107578       83.4          69.66        216                 
+Cancelled        18329        14.2          6.92         7563                
+Returned         2109         1.6           1.38         3                   
+Pending          947          0.7           0.62         10                  
+Lost or damaged  6            0.0           0.0          0                   
+gross_inr_m  net_inr_m  pct_overstated
+-----------  ---------  --------------
+78.59        69.66      11.4          
+recorded_inr_m  estimated_inr_m  total_inr_m
+--------------  ---------------  -----------
+6.92            5.04             11.96      
+month    days  net_inr_m  net_per_day_k  units_per_day  revenue_per_unit
+-------  ----  ---------  -------------  -------------  ----------------
+2022-04  30    25.67      856.0          1373.0         623.0           
+2022-05  31    23.46      757.0          1146.0         660.0           
+2022-06  26    19.25      740.0          1126.0         657.0           
+category       apr_per_day_k  jun_per_day_k  change_k  change_pct
+-------------  -------------  -------------  --------  ----------
+Set            460.0          347.0          -114.0    -25.0     
+Kurta          236.0          211.0          -25.0     -10.0     
+Western Dress  88.0           120.0          33.0      37.0      
+Top            55.0           49.0           -7.0      -12.0     
+Ethnic Dress   7.0            8.0            1.0       12.0      
+Blouse         6.0            3.0            -2.0      -42.0     
+Saree          2.0            1.0            -1.0      -46.0     
+Bottom         2.0            1.0            -1.0      -40.0     
+Dupatta                       0.0                                
