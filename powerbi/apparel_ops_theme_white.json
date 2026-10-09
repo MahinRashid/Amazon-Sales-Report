@@ -1,0 +1,42 @@
+{
+  "name": "Apparel Ops White",
+  "dataColors": [
+    "#1A1A1A",
+    "#F7C948",
+    "#8A8A84",
+    "#CFCFCA",
+    "#44443F",
+    "#6A6A64"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#111111",
+  "tableAccent": "#F7C948",
+  "good": "#1A1A1A",
+  "neutral": "#8A8A84",
+  "bad": "#F7C948",
+  "maximum": "#F7C948",
+  "center": "#FBE7A1",
+  "minimum": "#FFFFFF",
+  "textClasses": {
+    "callout": {
+      "fontFace": "DIN",
+      "fontSize": 30,
+      "color": "#111111"
+    },
+    "title": {
+      "fontFace": "DIN",
+      "fontSize": 13,
+      "color": "#111111"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 10,
+      "color": "#44443F"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#44443F"
+    }
+  }
+}

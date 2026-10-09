@@ -1,0 +1,42 @@
+{
+  "name": "Apparel Ops Black",
+  "dataColors": [
+    "#D9D9D4",
+    "#F7C948",
+    "#8A8A84",
+    "#4D4D48",
+    "#F5F5F2",
+    "#B8B8B2"
+  ],
+  "background": "#1C1C1C",
+  "foreground": "#F5F5F2",
+  "tableAccent": "#F7C948",
+  "good": "#D9D9D4",
+  "neutral": "#8A8A84",
+  "bad": "#F7C948",
+  "maximum": "#F7C948",
+  "center": "#8A7430",
+  "minimum": "#1C1C1C",
+  "textClasses": {
+    "callout": {
+      "fontFace": "DIN",
+      "fontSize": 30,
+      "color": "#F5F5F2"
+    },
+    "title": {
+      "fontFace": "DIN",
+      "fontSize": 13,
+      "color": "#F5F5F2"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 10,
+      "color": "#C9C9C4"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#C9C9C4"
+    }
+  }
+}
