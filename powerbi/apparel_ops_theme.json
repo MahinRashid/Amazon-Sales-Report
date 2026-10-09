@@ -1,0 +1,19 @@
+{
+  "name": "Apparel Ops",
+  "dataColors": ["#0F9488", "#D9731C", "#6D4BC4", "#C23B3B", "#B9BCCB", "#1B1D45"],
+  "background": "#FFFFFF",
+  "foreground": "#15172E",
+  "tableAccent": "#1B1D45",
+  "good": "#0F9488",
+  "neutral": "#D9731C",
+  "bad": "#C23B3B",
+  "maximum": "#C23B3B",
+  "center": "#F0B8B8",
+  "minimum": "#F9E6E6",
+  "textClasses": {
+    "callout": { "fontFace": "DIN", "fontSize": 30, "color": "#15172E" },
+    "title": { "fontFace": "DIN", "fontSize": 13, "color": "#15172E" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 10, "color": "#4D5170" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#4D5170" }
+  }
+}
