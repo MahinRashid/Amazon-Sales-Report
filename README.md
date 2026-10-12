@@ -162,7 +162,23 @@ Weeks of cover = stock on hand ÷ average units shipped per week over the 13 wee
 
 ## 9. Power BI dashboard
 
-*In progress.* The star-schema tables are produced by [`sql/07_powerbi_exports.sql`](sql/07_powerbi_exports.sql): `fact_orders`, `dim_product` (with stock and weeks of cover), and `dim_state`.
+File: [`powerbi/Amazon-Sales-Report.pbix`](powerbi/Amazon-Sales-Report.pbix). Three pages, one question each, with category, fulfilment and state slicers on every page.
+
+**1. Overview: what is happening?**
+![Overview](powerbi/screenshots/1_overview.png)
+
+**2. Fulfilment: ship it ourselves or let Amazon do it?**
+![Fulfilment](powerbi/screenshots/2_fulfilment.png)
+
+**3. Stock & products: is stock in the right place?**
+![Stock and products](powerbi/screenshots/3_stock.png)
+
+How it's built:
+
+- **Star schema.** `fact_orders` joined to `dim_product` (with stock and weeks of cover), `dim_state` and a date table. The tables are produced by [`sql/07_powerbi_exports.sql`](sql/07_powerbi_exports.sql) and saved in [`powerbi/data/`](powerbi/data/).
+- **DAX measures** for net revenue, cancellation rate by fulfilment method, a 7-day revenue average, the orders and revenue saved at Amazon's cancellation rate, and revenue on thin stock.
+- **Colour carries meaning.** Yellow marks what needs attention (cancellations, falling categories, products under two weeks of stock); black and grey are everything else.
+- **Every card matches the SQL results** in [`outputs/`](outputs/).
 
 ## How to run
 
@@ -185,6 +201,7 @@ This cleans the raw files, loads them into SQLite, runs every SQL analysis (resu
 ├── sql/                             load + 5 analysis scripts + Power BI exports
 ├── notebooks/analysis.ipynb         charts and the significance test
 ├── outputs/                         SQL results (.txt) and charts (charts/*.png)
+├── powerbi/                         dashboard (.pbix), screenshots, data tables and theme
 ├── archive_2024/                    my original 2024 notebook, dashboard and cleaned file
 ├── requirements.txt
 └── run_all.sh
